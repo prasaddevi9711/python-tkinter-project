@@ -2,13 +2,13 @@ from tkinter import *
 import pymysql
 from tkinter import ttk
 
-class NTHStudentsData: 
+class StudentsData: 
       def __init__(self,root):
         self.root=root
-        self.root.title("NARAYANA Tech House")
+        self.root.title("Student Info Data")
         self.root.geometry("1350x700")
 #create label
-        title=Label(self.root,text="Welcome To NTH",
+        title=Label(self.root,text="Welcome To Data",
                     bd=5,
                     relief=GROOVE,
                     bg="green",
@@ -325,5 +325,5 @@ class NTHStudentsData:
 
 
 root = Tk()
-obj = NTHStudentsData(root)
+obj = StudentsData(root)
 root.mainloop()
